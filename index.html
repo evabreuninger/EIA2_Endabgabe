@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='script/classes/ball.js' defer></script>
+  <script src='script/classes/player.js' defer></script>
+  <script src='script/mainscript.js' defer></script>
+
+  <title>Endaufgabe</title>
+</head>
+
+<body>
+  <div id="Start">
+
+  </div>
+
+
+  <div class="container">
+    <div class="Playfield">
+      <div class="ScoreBoard">
+        <p id="ScoreField"> Score Team One/Team Two:</p>
+        <div id="ScoreTeamOne">0</div> :
+        <div id="ScoreTeamTwo">0</div>
+        <p id="PlayerOnBall">On the Ball: </p>
+      </div>
+      <div class="GameCanvas">
+        <div id="Field">
+          <img src="assets/feld.jpg" id="FieldImg">
+          <canvas id="FieldCanvas" width="2100" height="1360"></canvas>
+        </div>
+      </div>
+    </div>
+    <div id="PlayerInfo">
+        <form>
+          <input type="color" id="TrikotOne" name="TrikotOne" value="#0000ff">
+          <label for="TrikotOne">Trikot Color Team One</label><br>
+          <input type="color" id="TrikotTwo" name="TrikotTwo" value="#ff0000">
+          <label for="TrikotTwo">Trikot Color Team Two</label><br><br><br>
+          <label for="team">Choose Team</label><br><br>
+          <select id="team" name="team">
+            <option value="team1">Team One</option>
+            <option value="team2">Team Two</option>
+          </select><br>
+          <input type="range" id="selectedPlayer" name="selectedPlayer" min="1" max="11" value="0">
+          <label for="selectedPlayer">Select Player</label><br>
+          <input type="range" id="sidePlayer" name="sidePlayer" min="1" max="5" value="0">
+          <label for="sidePlayer">Select Replacement</label><br><br>
+          <input id="ReplaceBut" type="button" value="Replace">
+        </form><br><br>
+      <div id="selectedPlayerInfo">
+        <form>
+          <label>Selected Player</label><br><br>
+          <input type="text" id="selectedPlayerName" name="selectedPlayerName" placeholder="none">
+          <label for="selectedPlayerName">Name</label><br>
+          <input type="range" id="selectedPlayerSpeed" name="selectedPlayerSpeed" min="1" max="15" value="5"
+            oninput="this.nextElementSibling.value = this.value">
+          <output name="sps">5</output>
+          <label for="selectedPlayerSpeed">Speed</label><br>
+          <input type="range" id="selectedPlayerAcuracy" name="selectedPlayerAcuracy" min="0" max="100" value="50"
+            oninput="this.nextElementSibling.value = this.value + '%'">
+          <output name="spa">100%</output>
+          <label for="selectedPlayerAcuracy">Accuracy</label><br>
+          <input id="SaveSelect" type="button" value="Save Change">
+        </form><br><br>
+      </div>
+      <div id="replacePlayerInfo">
+        <form>
+          <label>Replacement Player</label><br><br>
+          <input type="text" id="replacePlayerName" name="replacePlayerName" placeholder="none">
+          <label for="replacePlayerName">Name</label><br>
+          <input type="range" id="replacePlayerSpeed" name="replacePlayerSpeed" min="1" max="15" value="5"
+            oninput="this.nextElementSibling.value = this.value">
+          <output name="rps">5</output>
+          <label for="replacePlayerSpeed">Speed</label><br>
+          <input type="range" id="replacePlayerAcuracy" name="replacePlayerAcuracy" min="0" max="100" value="100"
+            oninput="this.nextElementSibling.value = this.value + '%'">
+          <output name="rpa">100%</output>
+          <label for="replacePlayerAcuracy">Accuracy</label><br>
+          <input id="SaveReplace" type="button" value="Save Change">
+        </form>
+      </div>
+    </div>
+    <div id="startinfo">
+      <p>General Info:</p>
+      <p>For Start/Pause press P</p>
+      <p>For PlayerInfo press CTRL</p>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

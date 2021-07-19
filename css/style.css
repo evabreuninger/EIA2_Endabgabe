@@ -1,0 +1,68 @@
+body{
+    background-color: #414141;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#FieldImg{
+    width: 1050px;
+    height: 680px;
+    z-index: 1;
+    position: absolute;
+}
+
+#FieldCanvas{
+    width: 1050px;
+    height: 680px;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Playfield PlayerInfo";
+}
+
+.Playfield {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ScoreBoard"
+    "GameCanvas";
+  grid-area: Playfield;
+}
+
+.ScoreBoard { grid-area: ScoreBoard; }
+
+.GameCanvas { grid-area: GameCanvas; }
+
+#PlayerInfo { 
+  grid-area: PlayerInfo; 
+  margin-top: 122px;
+}
+
+
+#ScoreTeamOne {
+    display: inline-block;
+    width: 10px;
+    font-size: x-large;
+}
+
+#ScoreTeamTwo {
+    display: inline-block;
+    width: 10px;
+    font-size: x-large;
+}
+  
+#startinfo {
+  font-size: small;
+}
