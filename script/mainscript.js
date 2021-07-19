@@ -16,7 +16,7 @@ var end;
     let ball = new end.Ball();
     // Array für alle moveables
     let allPos = [[200, 340], [300, 110], [415, 220], [415, 450], [300, 550], [640, 340], [900, 120], [900, 560], [650, 600], [650, 75], [950, 340], [200, 340], [300, 110], [415, 220], [415, 450], [300, 550], [640, 340], [900, 120], [900, 560], [650, 600], [650, 75], [950, 340], [340, 400], [0, 0], [0, 0]];
-    let allNames = ["Morgana", "Nami", "Tristana", "Jhin", "Neeko", "Katarina", "Irelia", "Evelyn", "Kha'zix", "Fiora", "Yann Sommer", "Blitzcrank", "Nautilus", "MissFortune", "Toni Kroos", "Vladimir", "Thomas Müller", "Robin Gosens", "Mats Hummels", "Antonio Rüdiger", "Timo Werner", "Manuel Neuer", "Soraka", "Mordekaiser", "Vayne", "Shen", "Diana", "Twitch", "Alistar", "ThamKench", "Lulu", "Qiana"];
+    let allNames = ["Edimilson Fernandes", "Christian Fassnacht", "Breel Embolo", "Admir Mehmedi", "Ruben Vargas", "Steven Zuber", "Jordan Lotomba", "Kevin Mbabu", "Ricardo Rodríguez", "Silvan Widmer", "Yann Sommer", "İlkay Gündoğan", "Emre Can", "Joshua Kimmich", "Toni Kroos", "Timo Werner", "Thomas Müller", "Robin Gosens", "Mats Hummels", "Antonio Rüdiger", "Matthias Ginter", "Manuel Neuer", "Yvon Mvogo", "Fabian Schär", "Nico Elvedi", "Steven Zuber", "Remo Freuler", "Kevin Trapp", "Kai Havertz", "Kevin Volland", "Marcel Halstenberg", "Matthias Ginter"];
     let people = [];
     let touchingPlayer;
     let touching = false;
